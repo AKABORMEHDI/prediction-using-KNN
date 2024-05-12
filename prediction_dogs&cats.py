@@ -15,10 +15,10 @@ def load_images_from_folder(folder):
     return images
 
 # Paths to your image folders
-cat_train_path = 'C:/Users/AM/Documents/IA/Dog_and_Cat/Cat_train'
-cat_test_path = 'C:/Users/AM/Documents/IA/Dog_and_Cat/Cat_test'
-dog_train_path = 'C:/Users/AM/Documents/IA/Dog_and_Cat/Dog_train'
-dog_test_path = 'C:/Users/AM/Documents/IA/Dog_and_Cat/Dog_test'
+cat_train_path = 'Dog_and_Cat/Cat_train'
+cat_test_path = 'Dog_and_Cat/Cat_test'
+dog_train_path = 'Dog_and_Cat/Dog_train'
+dog_test_path = 'Dog_and_Cat/Dog_test'
 
 # Load images for cats and dogs from training and testing folders
 cat_train_images = load_images_from_folder(cat_train_path)
