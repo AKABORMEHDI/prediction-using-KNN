@@ -21,19 +21,19 @@ def load_images(folder_path, label):
                 break
     return images, labels
 
-cat_folder = "C:/Users/AM/Documents/IA/Dog_and_Cat/Cat_train"
+cat_folder = "Dog_and_Cat/Cat_train"
 cat_images, cat_labels = load_images(cat_folder, 0)
 
-dog_folder = "C:/Users/AM/Documents/IA/Dog_and_Cat/Dog_train"
+dog_folder = "Dog_and_Cat/Dog_train"
 dog_images, dog_labels = load_images(dog_folder, 1)
 
 X_train = np.concatenate((cat_images, dog_images), axis=0)
 y_train = np.concatenate((cat_labels, dog_labels))
 
-cat_folder = "C:/Users/AM/Documents/IA/Dog_and_Cat/Cat_test"
+cat_folder = "Dog_and_Cat/Cat_test"
 cat_images, cat_labels = load_images(cat_folder, 0)
 
-dog_folder = "C:/Users/AM/Documents/IA/Dog_and_Cat/Dog_test"
+dog_folder = "Dog_and_Cat/Dog_test"
 dog_images, dog_labels = load_images(dog_folder, 1)
 
 X_test = np.concatenate((cat_images, dog_images), axis=0)
@@ -97,7 +97,7 @@ X_normalized = scaler.fit_transform(X)
 W, b = artificial_neuron(X_normalized, y)
 
 # Charger une nouvelle image à tester
-test_image_path = "C:/Users/AM/Documents/IA/Dog_and_Cat/TEST/1.png"
+test_image_path = "Dog_and_Cat/TEST/1.png"
 test_image = cv2.imread(test_image_path, cv2.IMREAD_GRAYSCALE)
 test_image = cv2.resize(test_image, (256, 256))
 test_image_flattened = test_image.flatten().reshape(1, -1)
