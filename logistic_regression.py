@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn import linear_model
-df = pd.read_excel('C:/Users/akmehdi/Downloads/archaive/Date_Fruit_Datasets/Date_Fruit_Datasets.x1lsx)
+df = pd.read_excel('Date_Fruit_Datasets.x1lsx)
 df.head (10)
 nom_fruit_cible = dict(zip(df.etiquette_fruit.unique(), df.nom_fruit.unique())) // dictionaire
 print( nom_fruit_cible )
